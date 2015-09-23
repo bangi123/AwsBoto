@@ -5,8 +5,8 @@ import boto.ec2
 
 # connect to boto ec2 instance  
 conn = boto.ec2.connect_to_region("us-west-2",
-     aws_access_key_id='AKIAJ76RNMXT3A4W4M5A',
-     aws_secret_access_key='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')
+     aws_access_key_id='',
+     aws_secret_access_key='')
 print "conn is %s" % conn
 # get status of all instances from conn 
 statuses = conn.get_all_instance_status()
